@@ -1,9 +1,9 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.auf_abschlagstyp import AufAbschlagstyp
 from ..enum.auf_abschlagsziel import AufAbschlagsziel
 from ..enum.waehrungseinheit import Waehrungseinheit
+from ..zusatz_attribut import ZusatzAttribut
 from .energiemix import Energiemix
 from .preisgarantie import Preisgarantie
 from .regionale_preisstaffel import RegionalePreisstaffel

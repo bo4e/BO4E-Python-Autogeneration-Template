@@ -188,7 +188,6 @@ __all__ = [
 ]
 
 from .__version__ import __version__
-from .bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from .bo.angebot import Angebot
 from .bo.ansprechpartner import Ansprechpartner
 from .bo.ausschreibung import Ausschreibung
@@ -364,3 +363,4 @@ from .enum.zaehlerauspraegung import Zaehlerauspraegung
 from .enum.zaehlergroesse import Zaehlergroesse
 from .enum.zaehlertyp import Zaehlertyp
 from .enum.zaehlertyp_spezifikation import ZaehlertypSpezifikation
+from .zusatz_attribut import ZusatzAttribut

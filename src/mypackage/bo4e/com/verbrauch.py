@@ -3,10 +3,10 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.mengeneinheit import Mengeneinheit
 from ..enum.messwertstatus import Messwertstatus
 from ..enum.wertermittlungsverfahren import Wertermittlungsverfahren
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Verbrauch(BaseModel):

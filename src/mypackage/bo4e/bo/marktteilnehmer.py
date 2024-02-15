@@ -1,6 +1,5 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.adresse import Adresse
 from ..enum.anrede import Anrede
 from ..enum.geschaeftspartnerrolle import Geschaeftspartnerrolle
@@ -9,6 +8,7 @@ from ..enum.marktrolle import Marktrolle
 from ..enum.rollencodetyp import Rollencodetyp
 from ..enum.sparte import Sparte
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Marktteilnehmer(BaseModel):

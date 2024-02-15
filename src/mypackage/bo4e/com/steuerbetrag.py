@@ -2,9 +2,9 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.steuerkennzeichen import Steuerkennzeichen
 from ..enum.waehrungscode import Waehrungscode
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Steuerbetrag(BaseModel):

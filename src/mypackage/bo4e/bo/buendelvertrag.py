@@ -2,13 +2,13 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.unterschrift import Unterschrift
 from ..com.vertragskonditionen import Vertragskonditionen
 from ..enum.sparte import Sparte
 from ..enum.typ import Typ
 from ..enum.vertragsart import Vertragsart
 from ..enum.vertragsstatus import Vertragsstatus
+from ..zusatz_attribut import ZusatzAttribut
 from .geschaeftspartner import Geschaeftspartner
 from .vertrag import Vertrag
 

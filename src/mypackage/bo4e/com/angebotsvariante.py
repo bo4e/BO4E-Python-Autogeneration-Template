@@ -2,8 +2,8 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.angebotsstatus import Angebotsstatus
+from ..zusatz_attribut import ZusatzAttribut
 from .angebotsteil import Angebotsteil
 from .betrag import Betrag
 from .menge import Menge

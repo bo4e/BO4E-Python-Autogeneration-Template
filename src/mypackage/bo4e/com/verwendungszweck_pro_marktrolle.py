@@ -1,8 +1,8 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.marktrolle import Marktrolle
 from ..enum.verwendungszweck import Verwendungszweck
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class VerwendungszweckProMarktrolle(BaseModel):

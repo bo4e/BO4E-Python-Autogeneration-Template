@@ -2,9 +2,9 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.messwertstatus import Messwertstatus
 from ..enum.messwertstatuszusatz import Messwertstatuszusatz
+from ..zusatz_attribut import ZusatzAttribut
 from .zeitspanne import Zeitspanne
 
 

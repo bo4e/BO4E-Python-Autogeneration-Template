@@ -1,10 +1,10 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.betrag import Betrag
 from ..com.fremdkostenblock import Fremdkostenblock
 from ..com.zeitraum import Zeitraum
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Fremdkosten(BaseModel):

@@ -2,7 +2,6 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.betrag import Betrag
 from ..com.rechnungsposition import Rechnungsposition
 from ..com.steuerbetrag import Steuerbetrag
@@ -13,6 +12,7 @@ from ..enum.rechnungsstatus import Rechnungsstatus
 from ..enum.rechnungstyp import Rechnungstyp
 from ..enum.sparte import Sparte
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 from .geschaeftspartner import Geschaeftspartner
 from .marktlokation import Marktlokation
 from .messlokation import Messlokation

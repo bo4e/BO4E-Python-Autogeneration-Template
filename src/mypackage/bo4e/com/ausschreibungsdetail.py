@@ -1,7 +1,7 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.zaehlertyp import Zaehlertyp
+from ..zusatz_attribut import ZusatzAttribut
 from .adresse import Adresse
 from .menge import Menge
 from .zeitraum import Zeitraum

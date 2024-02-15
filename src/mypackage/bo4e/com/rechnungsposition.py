@@ -2,9 +2,9 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.bdew_artikelnummer import BDEWArtikelnummer
 from ..enum.mengeneinheit import Mengeneinheit
+from ..zusatz_attribut import ZusatzAttribut
 from .betrag import Betrag
 from .menge import Menge
 from .preis import Preis

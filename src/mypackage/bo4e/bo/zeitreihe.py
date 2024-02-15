@@ -1,6 +1,5 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.zeitreihenwert import Zeitreihenwert
 from ..enum.medium import Medium
 from ..enum.mengeneinheit import Mengeneinheit
@@ -8,6 +7,7 @@ from ..enum.messart import Messart
 from ..enum.messgroesse import Messgroesse
 from ..enum.typ import Typ
 from ..enum.wertermittlungsverfahren import Wertermittlungsverfahren
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Zeitreihe(BaseModel):

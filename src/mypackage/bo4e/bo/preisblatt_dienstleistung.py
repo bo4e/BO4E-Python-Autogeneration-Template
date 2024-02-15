@@ -1,6 +1,5 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.preisposition import Preisposition
 from ..com.zeitraum import Zeitraum
 from ..enum.bilanzierungsmethode import Bilanzierungsmethode
@@ -8,6 +7,7 @@ from ..enum.dienstleistungstyp import Dienstleistungstyp
 from ..enum.preisstatus import Preisstatus
 from ..enum.sparte import Sparte
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 from .geraet import Geraet
 from .marktteilnehmer import Marktteilnehmer
 

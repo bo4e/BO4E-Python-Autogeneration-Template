@@ -1,6 +1,5 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.adresse import Adresse
 from ..com.geokoordinaten import Geokoordinaten
 from ..com.katasteradresse import Katasteradresse
@@ -14,6 +13,7 @@ from ..enum.netzebene import Netzebene
 from ..enum.sparte import Sparte
 from ..enum.typ import Typ
 from ..enum.verbrauchsart import Verbrauchsart
+from ..zusatz_attribut import ZusatzAttribut
 from .geschaeftspartner import Geschaeftspartner
 
 

@@ -2,11 +2,11 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.energierichtung import Energierichtung
 from ..enum.mengeneinheit import Mengeneinheit
 from ..enum.verbrauchsart import Verbrauchsart
 from ..enum.waermenutzung import Waermenutzung
+from ..zusatz_attribut import ZusatzAttribut
 from .konzessionsabgabe import Konzessionsabgabe
 from .verwendungszweck_pro_marktrolle import VerwendungszweckProMarktrolle
 from .zaehlzeitregister import Zaehlzeitregister

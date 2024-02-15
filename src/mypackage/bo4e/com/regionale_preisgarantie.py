@@ -1,7 +1,7 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.preisgarantietyp import Preisgarantietyp
+from ..zusatz_attribut import ZusatzAttribut
 from .regionale_gueltigkeit import RegionaleGueltigkeit
 from .zeitraum import Zeitraum
 

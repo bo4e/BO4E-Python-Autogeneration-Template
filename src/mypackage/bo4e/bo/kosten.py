@@ -1,11 +1,11 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.betrag import Betrag
 from ..com.kostenblock import Kostenblock
 from ..com.zeitraum import Zeitraum
 from ..enum.kostenklasse import Kostenklasse
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Kosten(BaseModel):

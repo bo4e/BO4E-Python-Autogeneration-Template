@@ -1,6 +1,6 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
+from ..zusatz_attribut import ZusatzAttribut
 from .marktgebiet_info import MarktgebietInfo
 
 

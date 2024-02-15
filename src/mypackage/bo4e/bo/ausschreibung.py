@@ -2,13 +2,13 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.ausschreibungslos import Ausschreibungslos
 from ..com.zeitraum import Zeitraum
 from ..enum.ausschreibungsportal import Ausschreibungsportal
 from ..enum.ausschreibungsstatus import Ausschreibungsstatus
 from ..enum.ausschreibungstyp import Ausschreibungstyp
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 from .geschaeftspartner import Geschaeftspartner
 
 

@@ -3,7 +3,6 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.zaehlwerk import Zaehlwerk
 from ..enum.befestigungsart import Befestigungsart
 from ..enum.messwerterfassung import Messwerterfassung
@@ -14,6 +13,7 @@ from ..enum.zaehlerauspraegung import Zaehlerauspraegung
 from ..enum.zaehlergroesse import Zaehlergroesse
 from ..enum.zaehlertyp import Zaehlertyp
 from ..enum.zaehlertyp_spezifikation import ZaehlertypSpezifikation
+from ..zusatz_attribut import ZusatzAttribut
 from .geraet import Geraet
 from .geschaeftspartner import Geschaeftspartner
 

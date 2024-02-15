@@ -2,8 +2,8 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.arithmetische_operation import ArithmetischeOperation
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Messlokationszuordnung(BaseModel):

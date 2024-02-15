@@ -1,12 +1,12 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.adresse import Adresse
 from ..com.rufnummer import Rufnummer
 from ..com.zustaendigkeit import Zustaendigkeit
 from ..enum.anrede import Anrede
 from ..enum.titel import Titel
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 from .geschaeftspartner import Geschaeftspartner
 
 

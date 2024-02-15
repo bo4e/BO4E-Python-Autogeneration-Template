@@ -1,9 +1,9 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.geraeteklasse import Geraeteklasse
 from ..enum.geraetetyp import Geraetetyp
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Geraet(BaseModel):

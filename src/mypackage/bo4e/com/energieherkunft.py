@@ -2,8 +2,8 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.erzeugungsart import Erzeugungsart
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Energieherkunft(BaseModel):

@@ -1,9 +1,9 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.standorteigenschaften_gas import StandorteigenschaftenGas
 from ..com.standorteigenschaften_strom import StandorteigenschaftenStrom
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Standorteigenschaften(BaseModel):

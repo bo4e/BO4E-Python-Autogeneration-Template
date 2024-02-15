@@ -1,8 +1,8 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..bo.geraet import Geraet
 from ..enum.voraussetzungen import Voraussetzungen
+from ..zusatz_attribut import ZusatzAttribut
 from .menge import Menge
 
 

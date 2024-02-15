@@ -1,7 +1,7 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..bo.marktlokation import Marktlokation
+from ..zusatz_attribut import ZusatzAttribut
 from .angebotsposition import Angebotsposition
 from .betrag import Betrag
 from .menge import Menge

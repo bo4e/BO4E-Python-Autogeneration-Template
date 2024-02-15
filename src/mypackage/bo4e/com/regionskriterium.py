@@ -1,8 +1,8 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.gueltigkeitstyp import Gueltigkeitstyp
 from ..enum.regionskriteriumtyp import Regionskriteriumtyp
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Regionskriterium(BaseModel):

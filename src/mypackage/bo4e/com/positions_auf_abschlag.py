@@ -2,9 +2,9 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.auf_abschlagstyp import AufAbschlagstyp
 from ..enum.waehrungseinheit import Waehrungseinheit
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class PositionsAufAbschlag(BaseModel):

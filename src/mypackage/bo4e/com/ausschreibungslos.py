@@ -1,10 +1,10 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.preismodell import Preismodell
 from ..enum.rechnungslegung import Rechnungslegung
 from ..enum.sparte import Sparte
 from ..enum.vertragsform import Vertragsform
+from ..zusatz_attribut import ZusatzAttribut
 from .ausschreibungsdetail import Ausschreibungsdetail
 from .menge import Menge
 from .zeitraum import Zeitraum

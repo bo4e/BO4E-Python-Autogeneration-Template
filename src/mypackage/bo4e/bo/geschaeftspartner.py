@@ -2,12 +2,12 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.adresse import Adresse
 from ..enum.anrede import Anrede
 from ..enum.geschaeftspartnerrolle import Geschaeftspartnerrolle
 from ..enum.kontaktart import Kontaktart
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Geschaeftspartner(BaseModel):

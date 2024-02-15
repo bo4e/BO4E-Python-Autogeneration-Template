@@ -2,7 +2,6 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.energiemix import Energiemix
 from ..com.vertragskonditionen import Vertragskonditionen
 from ..com.zeitraum import Zeitraum
@@ -12,6 +11,7 @@ from ..enum.sparte import Sparte
 from ..enum.tarifmerkmal import Tarifmerkmal
 from ..enum.tariftyp import Tariftyp
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 from .kosten import Kosten
 from .marktteilnehmer import Marktteilnehmer
 

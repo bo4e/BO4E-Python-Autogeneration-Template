@@ -1,11 +1,11 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..com.menge import Menge
 from ..com.zeitreihenwert import Zeitreihenwert
 from ..enum.mengeneinheit import Mengeneinheit
 from ..enum.sparte import Sparte
 from ..enum.typ import Typ
+from ..zusatz_attribut import ZusatzAttribut
 from .marktlokation import Marktlokation
 from .messlokation import Messlokation
 

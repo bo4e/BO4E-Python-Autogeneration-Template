@@ -2,10 +2,10 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.mengeneinheit import Mengeneinheit
 from ..enum.preisstatus import Preisstatus
 from ..enum.waehrungseinheit import Waehrungseinheit
+from ..zusatz_attribut import ZusatzAttribut
 
 
 class Preis(BaseModel):

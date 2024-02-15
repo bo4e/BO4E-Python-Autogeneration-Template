@@ -1,7 +1,7 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.gueltigkeitstyp import Gueltigkeitstyp
+from ..zusatz_attribut import ZusatzAttribut
 from .kriterium_wert import KriteriumWert
 
 

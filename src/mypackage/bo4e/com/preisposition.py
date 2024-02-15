@@ -2,7 +2,6 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.bdew_artikelnummer import BDEWArtikelnummer
 from ..enum.bemessungsgroesse import Bemessungsgroesse
 from ..enum.kalkulationsmethode import Kalkulationsmethode
@@ -10,6 +9,7 @@ from ..enum.leistungstyp import Leistungstyp
 from ..enum.mengeneinheit import Mengeneinheit
 from ..enum.tarifzeit import Tarifzeit
 from ..enum.waehrungseinheit import Waehrungseinheit
+from ..zusatz_attribut import ZusatzAttribut
 from .preisstaffel import Preisstaffel
 
 

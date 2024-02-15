@@ -1,6 +1,6 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
+from ..zusatz_attribut import ZusatzAttribut
 from .betrag import Betrag
 from .menge import Menge
 from .preis import Preis

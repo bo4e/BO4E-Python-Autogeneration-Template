@@ -2,10 +2,10 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from ..bo4e_schemas.zusatz_attribut import ZusatzAttribut
 from ..enum.oekolabel import Oekolabel
 from ..enum.oekozertifikat import Oekozertifikat
 from ..enum.sparte import Sparte
+from ..zusatz_attribut import ZusatzAttribut
 from .energieherkunft import Energieherkunft
 
 
