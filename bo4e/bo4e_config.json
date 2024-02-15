@@ -1,0 +1,110 @@
+{
+  "requiredFields": [
+    "\\w+\\.\\w+\\._(version|typ)",
+    "bo\\.Energiemenge\\.energieverbrauch",
+    "bo\\.Geschaeftspartner\\.name1"
+  ],
+  "additionalFields": [
+    {
+      "$ref": "models/bo/Geschaeftspartner_extension.json"
+    },
+    {
+      "pattern": "bo\\.Geschaeftspartner",
+      "fieldName": "foo",
+      "fieldDef": {
+        "anyOf": [
+          {
+            "format": "date-time",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Foo"
+      }
+    }
+  ],
+  "additionalEnumItems": [
+    {
+      "pattern": "enum\\.BDEWArtikelnummer",
+      "items": [
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_2_1_MSBG",
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_2_2_MSBG",
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_2_3_MSBG",
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_2_4_MSBG",
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_2_5_MSBG",
+        "ZUSATZDIENSTLEISTUNG_PARAGRAPH_35_3_MSBG"
+      ]
+    }
+  ],
+  "additionalModels": [
+    {
+      "module": "com",
+      "schema": {
+        "$ref": "models/com/Bankverbindung.json"
+      }
+    },
+    {
+      "module": "com",
+      "schema": {
+        "additionalProperties": true,
+        "description": "This class includes details about the sepa mandates.",
+        "properties": {
+          "_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": " Id"
+          },
+          "sepaId": {
+            "title": "Sepaid",
+            "type": "string"
+          },
+          "sepaZahler": {
+            "title": "Sepazahler",
+            "type": "boolean"
+          },
+          "creditorIdentifier": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Creditoridentifier"
+          },
+          "gueltigSeit": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Gueltigseit"
+          }
+        },
+        "required": [
+          "sepaId",
+          "sepaZahler"
+        ],
+        "title": "SepaInfo",
+        "type": "object"
+      }
+    }
+  ]
+}
