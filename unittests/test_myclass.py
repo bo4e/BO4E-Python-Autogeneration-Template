@@ -13,6 +13,7 @@ class TestMyClass:
         assert my_class.do_something() == "abc"
 
     def test_bo4e_importable(self):
+        # pylint: disable=import-outside-toplevel
         from mypackage.bo4e import Bankverbindung
 
         assert issubclass(Bankverbindung, BaseModel)
