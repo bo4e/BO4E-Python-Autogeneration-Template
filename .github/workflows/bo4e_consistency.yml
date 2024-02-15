@@ -21,14 +21,14 @@ jobs:
           tox -e generate_bo4e
       - name: Run formatters
         run: |
-          isort src/ibims/bo4e
-          black src/ibims/bo4e
+          isort src/mypackage/bo4e
+          black src/mypackage/bo4e
       - name: Detect changed files
         uses: tj-actions/verify-changed-files@v18
         id: verify-changed-files
         with:
-          files: src/ibims/bo4e
+          files: src/mypackage/bo4e
           fail-if-changed: true
-          fail-message: "src/ibims/bo4e is inconsistent with the configuration in bo4e/. \
+          fail-message: "src/mypackage/bo4e is inconsistent with the configuration in bo4e/. \
           Please run 'tox -e generate_bo4e' and commit the changes or try editing the configuration files \
-          if you want to change files in src/ibims/bo4e/."
+          if you want to change files in src/mypackage/bo4e/."
