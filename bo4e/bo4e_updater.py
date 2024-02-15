@@ -19,8 +19,8 @@ from github import Github
 from github.Auth import Token
 from isort.main import main as isort_main
 
-PR_TARGET_OWNER = "Hochfrequenz"
-PR_TARGET_REPO = "intermediate-bo4e-migration-models"
+PR_TARGET_OWNER = "BO4E"
+PR_TARGET_REPO = "BO4E-Python-Autogeneration-Template"
 REPO_ROOT = Path(__file__).parents[1]
 DOTENV_FILE = REPO_ROOT / "bo4e/tox.env"
 
@@ -91,13 +91,13 @@ def rebuild_bo4e(version: str, gh_access_token: str) -> Optional[Exception]:
         logger.info("Running bo4e-generator...")
         generate_bo4e_schemas(
             input_directory=REPO_ROOT / "tmp/bo4e_schemas",
-            output_directory=REPO_ROOT / "src/ibims/bo4e",
+            output_directory=REPO_ROOT / "src/mypackage/bo4e",
             target_version=version,
             clear_output=True,
             pydantic_v1=False,
         )
         logger.info("Run isort on auto-generated code. Normally, this should not change anything.")
-        isort_main(str(REPO_ROOT / "src/ibims/bo4e"))
+        isort_main(str(REPO_ROOT / "src/mypackage/bo4e"))
     return error_during_rebuild
 
 
