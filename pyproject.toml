@@ -16,12 +16,14 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
-dependencies = []     # add all the dependencies here
+dependencies = [
+    "pydantic"
+]     # add all the dependencies here
 dynamic = ["readme", "version"]
 
 [project.urls]
-Changelog = "https://github.com/Hochfrequenz/python_template_repository/releases"
-Homepage = "https://github.com/Hochfrequenz/python_template_repository"
+Changelog = "https://github.com/BO4E/BO4E-Python-Autogeneration-Template/releases"
+Homepage = "https://github.com/BO4E/BO4E-Python-Autogeneration-Template"
 
 [tool.black]
 line-length = 120
@@ -30,6 +32,9 @@ target_version = ["py311", "py312"]
 [tool.isort]
 line_length = 120
 profile = "black"
+
+[tool.pylint.MASTER]
+ignore-paths = ".*src/mypackage/bo4e/.*"
 
 [tool.pylint."MESSAGES CONTROL"]
 max-line-length = 120
@@ -48,7 +53,7 @@ fragments = [{ path = "README.md" }]
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/_your_package_version.py"
+version-file = "src/_mypackage_version.py"
 template = '''
 version = "{version}"
 '''
