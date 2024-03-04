@@ -6,7 +6,7 @@
 #
 annotated-types==0.6.0
     # via pydantic
-pydantic==2.6.1
+pydantic==2.6.3
     # via your-favourite-package-name (pyproject.toml)
 pydantic-core==2.16.2
     # via pydantic
