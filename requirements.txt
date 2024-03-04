@@ -8,7 +8,7 @@ annotated-types==0.6.0
     # via pydantic
 pydantic==2.6.1
     # via your-favourite-package-name (pyproject.toml)
-pydantic-core==2.16.2
+pydantic-core==2.16.3
     # via pydantic
 typing-extensions==4.9.0
     # via
